@@ -1,5 +1,5 @@
 {% set name = "tvb-storage" %}
-{% set version = "2.3" %}
+{% set version = "2.4" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "e10bb40a486771703ba2776555ea5a453e619b07f10e4dea0d347043dee8f54b"
+  sha256: 1af5586db3adeda02089a9cccd16dbfec1fc5bd1df1e4985fba5837efa72debc
 
 build:
   number: 0
@@ -30,7 +30,7 @@ test:
   requires:
     - pytest
     - pip
-  
+
   commands:
     - pip check
     # TODO: run tests when they will be copied to the pypi archive
