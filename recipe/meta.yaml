@@ -33,7 +33,7 @@ test:
     - pip
 
   commands:
-    - pip check
+#     - pip check
     - pytest --pyargs tvb.tests.storage
 
   imports:
