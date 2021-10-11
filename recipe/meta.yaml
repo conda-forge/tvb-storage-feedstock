@@ -25,6 +25,7 @@ requirements:
     - h5py
     - numpy
     - scipy
+    - pyaescrypt
     - tvb-library
 
 test:
