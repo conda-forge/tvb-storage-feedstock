@@ -1,5 +1,5 @@
 {% set name = "tvb-storage" %}
-{% set version = "2.4" %}
+{% set version = "2.5" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1af5586db3adeda02089a9cccd16dbfec1fc5bd1df1e4985fba5837efa72debc
+  sha256: 749d1ef421a24a6f899ce8642c91660b4cccc72b1f00b1bbe08368e10f4f1159
 
 build:
   number: 0
@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools
 
   run:
-    - python >=3.6
+    - python >=3.7
     - h5py
     - numpy
     - scipy
@@ -32,6 +32,7 @@ test:
   requires:
     - pytest
     - pip
+    - decorator
 
   commands:
 #     - pip check
