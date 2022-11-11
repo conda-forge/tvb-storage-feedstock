@@ -24,9 +24,10 @@ requirements:
     - python >=3.7
     - h5py
     - numpy
-    - scipy
     - pyaescrypt
     - tvb-library
+    - python-kubernetes
+    - requests
 
 test:
   requires:
@@ -35,7 +36,7 @@ test:
     - decorator
 
   commands:
-#     - pip check
+     - pip check
     - pytest --pyargs tvb.tests.storage
 
   imports:
