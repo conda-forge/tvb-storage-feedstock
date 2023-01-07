@@ -1,5 +1,5 @@
 {% set name = "tvb-storage" %}
-{% set version = "2.7.1" %}
+{% set version = "2.7.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e4f311b90ac936997a2ea0438f71837cdb4d3e1e8b1abf9e6074ecd0d9b4230b
+  sha256: 501443ceb9f6374922a024b07ef09138f826fd0deaa69883c63dd0dff34fb16c
 
 build:
   number: 0
