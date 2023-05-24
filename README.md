@@ -1,11 +1,11 @@
-About tvb-storage
-=================
+About tvb-storage-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tvb-storage-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.thevirtualbrain.com/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tvb-storage-feedstock/blob/main/LICENSE.txt)
 
 Summary: A package for performing whole brain simulations
 
