@@ -1,5 +1,5 @@
 {% set name = "tvb-storage" %}
-{% set version = "2.8.1" %}
+{% set version = "2.9" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4bbfd65ab1e150cf28a8206bcf5e30a8a092293b108b1bbb3365e6675f6d8837
+  sha256: b64ac69a1ffee3ed18664d60012511d0d37c2205c1c2ee1030b442d23fbfbe52
 
 build:
   number: 0
@@ -52,12 +52,7 @@ about:
     The Virtual Brain Project (TVB Project) has the purpose of offering some |
     modern tools to the Neurosciences community, for computing, simulating |
     and analyzing functional and structural data of human brains. |
-    The Virtual Brain framework is a complete framework including: |
-    -  a plugable workflow manager; |
-    -  a data persistence layer (with a relational DB and File Storage HDF5); |
-    -  an HTML5 based user interface; |
-    -  visualizers for neuro-science related entities.
-    -  REST server and client SDK
+    The Virtual Brain Storage module wraps a data persistence layer (File Storage HDF5)
   doc_url: http://docs.thevirtualbrain.org/
   dev_url: https://github.com/the-virtual-brain/tvb-root
 
