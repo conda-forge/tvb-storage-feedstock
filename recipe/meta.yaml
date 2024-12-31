@@ -23,7 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - h5py
-    - numpy < 2
+    - numpy <2
     - pyaescrypt
     - tvb-library
     - python-kubernetes
