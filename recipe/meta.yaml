@@ -1,16 +1,16 @@
 {% set name = "tvb-storage" %}
-{% set version = "2.9" %}
+{% set version = "2.10.0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b64ac69a1ffee3ed18664d60012511d0d37c2205c1c2ee1030b442d23fbfbe52
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d0651befa7c1185a4a579316f054040eeddea6bb9614f9c4a8c91fcdf017e5e4
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
